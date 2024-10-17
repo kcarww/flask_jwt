@@ -1,0 +1,11 @@
+@authToken = {{gerar_token_jwt.response.body.token}}
+
+
+# @name gerar_token_jwt
+POST http://localhost:5000/
+
+
+###
+
+POST http://localhost:5000/validate
+Authorization: Bearer {{authToken}}
