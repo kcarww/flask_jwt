@@ -1,6 +1,8 @@
 from pymysql import Connection
+from src.models.interface.user_repository_interface import UserRepositoryInterface
 
-class UserRepository:
+
+class UserRepository(UserRepositoryInterface):
     def __init__(self, conn: Connection) -> None:
         self.__conn = conn
         

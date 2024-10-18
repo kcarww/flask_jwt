@@ -4,9 +4,9 @@ Este é um projeto básico Flask que utiliza PyMySQL para integração com o ban
 ### Pré-requisitos
 Certifique-se de ter o seguinte instalado antes de configurar o projeto:
 
-- **Python 3.x** (https://www.python.org/downloads/)
+- **Python 3.12** (https://www.python.org/downloads/)
 - **MySQL** (https://dev.mysql.com/downloads/installer/)
-- **pip** (já incluído no Python 3.x)
+- **pip** (já incluído no Python 3.12)
 
 
 Passo a Passo de Configuração
