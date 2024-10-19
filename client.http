@@ -9,3 +9,9 @@ POST http://localhost:5000/
 
 POST http://localhost:5000/validate
 Authorization: Bearer {{authToken}}
+
+
+###
+
+# @name first_method
+GET http://localhost:5000/
