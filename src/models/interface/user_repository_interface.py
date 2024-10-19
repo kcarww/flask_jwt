@@ -21,3 +21,7 @@ class UserRepositoryInterface(ABC):
     @abstractmethod
     def get_user(self, user_id: int) -> dict:
         pass
+    
+    @abstractmethod
+    def get_user_by_username(self, username: str) -> dict:
+        pass

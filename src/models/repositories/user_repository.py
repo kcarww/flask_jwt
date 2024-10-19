@@ -35,3 +35,9 @@ class UserRepository(UserRepositoryInterface):
         cursor = self.__conn.cursor()
         cursor.execute(sql, (user_id,))
         return cursor.fetchone()
+    
+    def get_user_by_username(self, username: str) -> dict:
+        sql = "SELECT * FROM users WHERE username = %s"
+        cursor = self.__conn.cursor()
+        cursor.execute(sql, (username,))
+        return cursor.fetchone()
