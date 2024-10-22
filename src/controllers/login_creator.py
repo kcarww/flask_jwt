@@ -27,7 +27,7 @@ class LoginCreator(LoginCreatorInterface):
         return user
     
     def __verify_correct_password(self, password: str, hashed_password: str) -> None:
-        if not self.__password_handler.verify_password(password, hashed_password):
+        if not self.__password_handler.check_password(password, hashed_password):
             raise Exception("Incorrect password")
         
     def __create_jwt_token(self, user_id: int) -> str:

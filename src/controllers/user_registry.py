@@ -22,3 +22,9 @@ class UserRegistry(UserRepositoryInterface):
             "count": 1,
             "username": username
         }
+        
+    def edit_name(self, user_id: int, new_name: str) -> None:
+        pass
+    
+    def registry_user(self, username: str, password: str) -> None:
+        pass
